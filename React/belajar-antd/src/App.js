@@ -1,10 +1,23 @@
-import Dasboard from './Component/Dasboard';
-import './App.css';
+
+import HalamanDepan from './Component/Latihan/HalamanDepan';
+import MembuatTulisan from './Component/Latihan/MembuatTulisan';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-     <Dasboard/>
+    <div>
+    <Router>
+    <Routes>
+    <Route path='/' element={<HalamanDepan/>}/>
+    <Route path='/tulis' element={<MembuatTulisan/>}/>
+
+   
+  
+  
+
+    </Routes>
+     </Router>
     </div>
   );
 }
