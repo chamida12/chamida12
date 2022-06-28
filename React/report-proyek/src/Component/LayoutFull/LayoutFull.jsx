@@ -1,25 +1,24 @@
 import React from "react";
 import { Layout } from "antd";
-
+import NavbarReport from "../Navbar/NavbarReport";
+import ContentAtas from "../Content/ContentAtas";
 
 const {  Header,Footer, Sider, Content } = Layout;
 
-const Coba = () => (
+const LayoutFull = () => (
 
     <>
         <Layout>
-      <Sider style={{background:"white"}}>
-
+      <Sider style={{background:"drak"}}>
+       
       </Sider>
       <Layout>
         <Header style={{background:"white"}}>
-       
+        <NavbarReport/>
         </Header>
-        <Header>
-        
-        </Header>
+      
         <Content style={{background:"white"}}>
-        
+        <ContentAtas/>
         </Content>
         <Footer>Footer</Footer>
       </Layout>
@@ -27,4 +26,4 @@ const Coba = () => (
     </>
 );
 
-export default Coba;
+export default LayoutFull;
