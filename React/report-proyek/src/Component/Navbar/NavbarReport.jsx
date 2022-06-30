@@ -34,10 +34,10 @@ const onChange = (value) => {
     };
 const NavbarReport = () => {
   return (
-    <Menu style={{background:"white", width:"1120px", height:"70px"}}  mode="horizontal">
+    <Menu style={{background:"white", width:"1100px", height:"70px"}}  mode="horizontal">
 
     
-    <h4 style={{padding:"20px"}}> Reports </h4>
+    <h4 style={{fontSize:"20px"}}> Reports </h4>
         <Cascader  style={{padding:"15px",width:"350px"}} options={options} onChange={onChange} placeholder="Please select" />
       
    <Menu.Item key="setting" icon={<SettingOutlined />} style={{marginLeft:"400px"}} className="setting"> Configure Report Layout</Menu.Item>
