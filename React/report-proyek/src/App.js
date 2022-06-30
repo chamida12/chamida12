@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Routes,Route } from "react-router-dom";
-import FullNeraca from "./Component/LayoutFull/FullUntungRugi";
+import FullNeraca from "./Component/LayoutFull/FullNeraca";
 import LayoutFull from "./Component/LayoutFull/LayoutFull";
 import NavbarReport from "./Component/Navbar/NavbarReport";
 
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LayoutFull/>}/>
           <Route path='/navbarReport' element={<NavbarReport/>}/>
-          <Route path='/laporan-untung-rugi' element={<FullNeraca/>}/>
+          <Route path='/laporan-neraca' element={<FullNeraca/>}/>
         </Routes>
       </Router>
   </div> 
