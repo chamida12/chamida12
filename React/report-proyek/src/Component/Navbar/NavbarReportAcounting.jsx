@@ -32,7 +32,7 @@ const options = [
 const onChange = (value) => {
     console.log(value);
     };
-const NavbarReport = () => {
+const NavbarReportAcounting = () => {
   return (
     <Menu style={{background:"white", width:"1100px", height:"70px"}}  mode="horizontal">
 
@@ -47,4 +47,4 @@ const NavbarReport = () => {
   )
 }
 
-export default NavbarReport
+export default NavbarReportAcounting

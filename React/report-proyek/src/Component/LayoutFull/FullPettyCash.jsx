@@ -1,11 +1,13 @@
 import React from "react";
 import { Layout } from "antd";
-import ContentAtas from "../Content/ContentAtas";
-import NavbarReportAcounting from "../Navbar/NavbarReportAcounting";
+
+
+import NavbarPettyCash from "../Navbar/NavbarCashBank";
+import { LaporanPettyCash } from "../../pages/Petty Cash/LaporanPettyCash";
 
 const {  Header,Footer, Sider, Content } = Layout;
 
-const LayoutFull = () => (
+const FullPettyCash = () => (
 
     <>
         <Layout>
@@ -14,11 +16,11 @@ const LayoutFull = () => (
       </Sider>
       <Layout>
         <Header style={{background:"white"}}>
-        <NavbarReportAcounting/>
+        <NavbarPettyCash/>
         </Header>
       
         <Content style={{background:"white"}}>
-        <ContentAtas/>
+        <LaporanPettyCash/>
         </Content>
         <Footer>Footer</Footer>
       </Layout>
@@ -26,4 +28,4 @@ const LayoutFull = () => (
     </>
 );
 
-export default LayoutFull;
+export default FullPettyCash;

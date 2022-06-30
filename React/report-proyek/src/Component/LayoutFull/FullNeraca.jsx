@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
-import NavbarReport from "../Navbar/NavbarReport";
 import { Neraca } from "../../pages/Neraca/Neraca";
+import NavbarReportAcounting from "../Navbar/NavbarReportAcounting";
 
 
 const {  Header,Footer, Sider, Content } = Layout;
@@ -15,7 +15,7 @@ const FullNeraca = () => (
       </Sider>
       <Layout>
         <Header style={{background:"white"}}>
-        <NavbarReport/>
+        <NavbarReportAcounting/>
         </Header>
       
         <Content style={{background:"white"}}>
