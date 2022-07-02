@@ -5,41 +5,38 @@ const ComponentContentAtas = () => (
   <Breadcrumb>
 
     <Breadcrumb.Item >
-    <p>
-      <Space style={{marginLeft:"56px"}}>
-      <div>
-       <p  style={{fontFamily:"fantasy", fontSize:"25px"}}> Account Receivble </p>
+    <div>
+      <p>
+        <Space style={{marginLeft:"56px"}}>
+          <div>
+            <p  style={{fontFamily:"fantasy", fontSize:"25px"}}> Account Receivble </p>
+            <p></p>
 
-      </div>
-      </Space>
-      <Space style={{marginLeft:"200px",}}>
-        <div style={{ fontFamily:"fantasy",fontSize:"25px"}}> Account Payable </div>
-
-      <Link target="_blank" href="/generaljournal" style={{ fontFamily:"fantasy", fontSize:"25px"}}></Link>
-    
-      </Space>
-      <Space style={{marginLeft:"200px",}}>
-        <div style={{ fontFamily:"fantasy",fontSize:"25px"}}> Cash Bank </div>
-      
-      <Link target="_blank" href="http://www.alipay.com/" style={{ fontFamily:"fantasy",fontSize:"25px"}}></Link>
+          </div>
         </Space>
-        </p>
-        <p>
-      <Space style={{marginLeft:"56px"}}>
-      <div>
-       <p  style={{fontFamily:"fantasy", fontSize:"25px"}}> General Ledger </p>
+        <Space style={{marginLeft:"200px",}}>
+          <div style={{ fontFamily:"fantasy",fontSize:"25px"}}> Account Payable </div>
+        </Space>
+        <Space style={{marginLeft:"200px",}}>
+          <div>
+            <p style={{ fontFamily:"fantasy",fontSize:"25px"}}> Cash Bank </p>
+            <Link href='/input-petty-cash' > Petty Cash </Link>
 
-      </div>
-      </Space>
-      <Space style={{marginLeft:"235px"}}>
-        <div style={{ fontFamily:"fantasy",fontSize:"25px"}}> Honor Doctor </div>
+          </div>
+        </Space>
+      </p>
+      <p>
+        <Space style={{marginLeft:"56px"}}>
+          <div>
+            <p  style={{fontFamily:"fantasy", fontSize:"25px"}}> General Ledger </p>
 
-      <Link target="_blank" href="/generaljournal" style={{ fontFamily:"fantasy", fontSize:"25px"}}></Link>
-    
-      </Space>
-        </p>
-  
-  
+          </div>
+        </Space>
+        <Space style={{marginLeft:"235px"}}>
+          <div style={{ fontFamily:"fantasy",fontSize:"25px"}}> Honor Doctor </div>
+          </Space>
+            </p>
+    </div>
       
 
 
