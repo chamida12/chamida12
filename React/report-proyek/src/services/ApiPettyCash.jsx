@@ -1,6 +1,13 @@
+
+
+
+
+
+
+
 import axios from "axios";
 
-const BASE_PATH ="https://761e-114-142-171-45.ap.ngrok.io";
+const BASE_PATH ="https://644d-114-142-169-43.ap.ngrok.io";
 
 export async function getUser(setListUser){
     try{
@@ -12,22 +19,7 @@ export async function getUser(setListUser){
     }
 
 }
-export async function editUser(dataUser, setIsEditing, setDataUser, setMessage) {
-    const payload = dataUser;
 
-    try {
-        const results = await axios.put(`${BASE_PATH}/put/${dataUser.id}`, payload);
-        if (results.status === 200) {
-            setIsEditing(false);
-            setDataUser({no_akun: "", nama_akun: "", nominal: "", keterangan: "",periode:""});
-            setMessage("User Edited Successfully!!");
-        }
-        // console.log(results);
-    } catch (error) {
-        console.log("ERROR EDIT: ", error);
-    }
-    // console.log("EDIT USER", payload);
-};
 
 export async function postUser(dataUser, setDataUser, setMessage) {
     const payload = {
@@ -49,16 +41,3 @@ export async function postUser(dataUser, setDataUser, setMessage) {
         console.log("ERROR EDIT: ", error.response);
     }
 };
-
-export async function deleteUser(data, setMessage) {
-    try {
-        const results = await axios.delete(`${BASE_PATH}/delete/${data}`);
-        if (results.status === 200) {
-            setMessage("User Deleted Successfully!!!")
-            // console.log("DELETE SUCCESSFULLY !!!");
-        }
-        // console.log(results);
-    } catch (error) {
-        console.log("ERROR EDIT: ", error.response);
-    }
-}
