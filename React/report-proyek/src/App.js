@@ -4,7 +4,9 @@ import FullInputPettyCash from "./Component/LayoutFull/FullInputPettyCash";
 import FullNeraca from "./Component/LayoutFull/FullNeraca";
 import FullPettyCash from "./Component/LayoutFull/FullPettyCash";
 import LayoutFull from "./Component/LayoutFull/LayoutFull";
+
 import NavbarReportAcounting from "./Component/Navbar/NavbarReportAcounting";
+import { InputPayment } from "./pages/Cash Bank/Bank Payment/InputPayment";
 
 
 
@@ -20,6 +22,7 @@ function App() {
           <Route path='/laporan-neraca' element={<FullNeraca/>}/>
           <Route path='/laporan-petty-cash' element={<FullPettyCash/>}/>
           <Route path='/input-petty-cash' element={<FullInputPettyCash/>}/>
+          <Route path='/input-payment' element={<InputPayment/>}/>
 
         </Routes>
       </Router>

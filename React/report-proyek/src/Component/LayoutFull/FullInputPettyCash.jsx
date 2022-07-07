@@ -3,8 +3,8 @@ import { Layout } from "antd";
 
 
 import NavbarPettyCash from "../Navbar/NavbarCashBank";
-import { LaporanPettyCash } from "../../pages/Petty Cash/LaporanPettyCash";
-import { InputPettyCash } from "../../pages/Petty Cash/InputPettyCash";
+import { InputPettyCash } from "../../pages/Cash Bank/Petty Cash/InputPettyCash";
+
 
 const {  Header,Footer, Sider, Content } = Layout;
 

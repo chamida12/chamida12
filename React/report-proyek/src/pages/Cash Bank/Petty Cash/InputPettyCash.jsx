@@ -2,16 +2,12 @@
 
 
 
-
-
-
 import { Button, Card, Form, Input, Select} from "antd";
 import React, { useEffect, useState } from "react";
-import './InputPettyCash.css'
+
 import { useNavigate } from "react-router-dom";
 import FormItem from "antd/lib/form/FormItem";
-
-import { getUser,postUser } from "../../services/ApiPettyCash";
+import { getUser,postUser } from "../../../services/ApiPettyCash";
 
 export const InputPettyCash = () => {
     const navigate = useNavigate ()

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom";
-import { getUser } from "../../services/ApiPettyCash";
+import { getUser } from "../../../services/ApiPettyCash";
 
 
 export const LaporanPettyCash = () => {
