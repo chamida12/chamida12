@@ -7,6 +7,7 @@ import HookStatless from './Component/Latihan/Hook/HookStatless';
 import Post from './Component/Latihan/Post';
 import './App.css';
 import ButtonDisabled from './Pages/ButtonDisabled';
+import FormInput from './Pages/FormInput';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
     <Route path='/hookStatless' element={<HookStatless/>}/>
     <Route path='/post' element={<Post/>}/>
     <Route path='/button' element={<ButtonDisabled/>}/>
+    <Route path='/form' element={<FormInput/>}/>
+
    
   
   
