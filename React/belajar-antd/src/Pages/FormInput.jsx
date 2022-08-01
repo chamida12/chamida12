@@ -13,29 +13,8 @@ const FormInput=()=> {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   console.log(email,password,setEmail,setPassword);
-  const [emailErr,setEmailErr] = useState({});
-  const [passwordErr,setPasswordErr] = useState ({});
 
-
-  const onSubmit = (e)=>{
-    e.preventDefalut();
-    const isValid = formValidation();
-  }
-
-  const formValidation = () =>{
-    const emailErr = {};
-    const passwordErr = {};
-    let isValid = true;
-    
-    if(email.trim().length < 5){
-      emailErr.emailShort ="email yang anda masukan belum memenuhi syarat";
-      isValid = false;
-    }
-    if(email.trim().length > 10){
-      emailErr.emailLong = "email anda tidak memenuhi kriteria"
-    }
-    
-  }
+  
   
   useEffect(()=>{
       getUser(setListUser);

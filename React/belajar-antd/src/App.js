@@ -8,6 +8,7 @@ import Post from './Component/Latihan/Post';
 import './App.css';
 import ButtonDisabled from './Pages/ButtonDisabled';
 import FormInput from './Pages/FormInput';
+import ValidasiFormAntd from './Pages/VlidasiFormAntd';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Route path='/post' element={<Post/>}/>
     <Route path='/button' element={<ButtonDisabled/>}/>
     <Route path='/form' element={<FormInput/>}/>
+    <Route path='/validasiForm' element={<ValidasiFormAntd/>}/>
 
    
   
