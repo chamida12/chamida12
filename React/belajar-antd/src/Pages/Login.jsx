@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Content } from 'antd/lib/layout/layout';
 import Card from 'antd/lib/card/Card';
 import { Input,Button } from 'antd';
 import { MailTwoTone,LockTwoTone } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 
+import { LoginProfil } from '../services';
 
 const Login=()=> {
   const navigate= useNavigate()
+  const [email,setEmail] = useState("");
+  const [password,setPassword] =useState("");
   return (
     <div>
       <Content>
