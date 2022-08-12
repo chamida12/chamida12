@@ -2,7 +2,7 @@
 
 import { appNotification } from "../Helper/AppNotification";
 
-const BASE_PATH ="https://e8fa-125-160-104-4.ap.ngrok.io";
+const BASE_PATH ="https://217c-114-142-169-28.ap.ngrok.io";
 
 export async function userRegistration(email, password, navigate) {
     const payload = {

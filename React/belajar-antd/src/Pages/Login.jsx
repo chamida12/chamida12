@@ -21,7 +21,10 @@ const Login=()=> {
 
                   <Input type={"email"} placeholder="Email" style={{height:"50px"}} 
                   prefix={<MailTwoTone   
-                  style={{fontSize:"20px",textIndent:"4px"}}/>} />
+                  style={{fontSize:"20px",textIndent:"4px"}}/>}
+                  onChange={(e)=>{
+                    setEmail(e.target.value)
+                }} />
                   <br/>
                   <br/>
                   <Input.Password type={"password"} placeholder="Password" style={{height:"50px"}} 
